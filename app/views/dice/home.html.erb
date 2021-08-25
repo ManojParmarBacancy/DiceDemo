@@ -1,0 +1,13 @@
+<center>
+<h1>Dice Rolling app</h1>
+<% if flash[:error] %>
+ <%= flash[:error] %>
+<% end %>
+<form action="/roll" method="get" accept-charset="UTF-8" >
+  <p>  Number of dice <input type="textbox" name="no_of_dice" type="text" required: true /> </br> </br>
+    Sides of dice  &nbsp&nbsp <input type="textbox" name="dice_sides" type="text" required: true /> </br>
+     &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp (ex 6, 7 if no of dice value is 2) </br> </br>
+      &nbsp &nbsp <input type="submit" value="Roll the dice" /> </p>
+<center>
+
+</form>

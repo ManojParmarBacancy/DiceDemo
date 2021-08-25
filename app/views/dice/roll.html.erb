@@ -1,0 +1,8 @@
+<h1>Dice Result</h1>
+
+<% @result[:dice_results_array].each_with_index do |result, index| %>
+  <%= result[:display_text] %> </br>
+  Outcomes : <%= result[:outcomes] %> </br> </br>
+<% end %>
+
+<h3> Total Sum = <%= @result[:total_sum] %> </h3>
